@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Veille mail Hermes</title>
+<style>
+  :root { color-scheme: light; }
+  body {
+    margin: 0; padding: 3rem 1.5rem;
+    background: #ffffff; color: #1a1a1a;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  h1 { font-size: 1.5rem; margin: 0 0 .25rem; }
+  .sous { color: #666; margin: 0 0 2rem; font-size: .9rem; }
+  h2 { font-size: 1.05rem; margin: 2rem 0 .5rem; }
+  p, li { font-size: .97rem; }
+  ul { padding-left: 1.25rem; }
+  table { border-collapse: collapse; width: 100%; margin: .75rem 0; font-size: .93rem; }
+  th, td { text-align: left; padding: .45rem .6rem; border-bottom: 1px solid #e5e5e5; vertical-align: top; }
+  th { background: #f7f7f7; font-weight: 600; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid #e5e5e5;
+           font-size: .88rem; color: #666; }
+  a { color: #1a5fb4; }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Politique de confidentialité</h1>
+  <p class="sous">Veille mail Hermes — dernière mise à jour : 29 octobre 2026</p>
+
+  <h2>1. Qui utilise cette application</h2>
+  <p>
+    Cette application est un outil personnel. Elle n'est pas distribuée, ne dispose
+    d'aucun autre utilisateur que son propriétaire, et n'est pas accessible au public.
+    Elle fonctionne sur une machine privée appartenant à son propriétaire.
+  </p>
+
+  <h2>2. Données Google consultées</h2>
+  <table>
+    <tr><th>Donnée</th><th>Usage</th></tr>
+    <tr>
+      <td>Messages Gmail (expéditeur, objet, date, corps texte)</td>
+      <td>Repérer les messages contenant une date et en extraire l'événement correspondant.</td>
+    </tr>
+    <tr>
+      <td>Pièces jointes</td>
+      <td><strong>Jamais ouvertes ni lues.</strong> Seul le nom du fichier est relevé, à titre indicatif.</td>
+    </tr>
+    <tr>
+      <td>Google Calendar</td>
+      <td>Créer les événements dans un calendrier dédié nommé « Veille mail ».</td>
+    </tr>
+  </table>
+  <p>
+    Aucune autre donnée Google n'est consultée. L'application ne modifie ni ne supprime
+    aucun message, et n'envoie aucun courrier.
+  </p>
+
+  <h2>3. Comment les données sont traitées</h2>
+  <p>
+    Les messages sont d'abord filtrés localement, sur la machine du propriétaire, sans
+    intervention d'un service externe. Ce filtrage écarte la majorité des messages et
+    masque automatiquement les données sensibles qu'il reconnaît : coordonnées bancaires
+    (IBAN), numéros de carte, numéros de téléphone.
+  </p>
+  <p>
+    Les messages contenant un mot de passe, une clé d'API ou un numéro de sécurité sociale
+    ne sont <strong>pas transmis du tout</strong> : ils sont signalés au propriétaire pour
+    traitement manuel.
+  </p>
+  <p>
+    Pour les messages restants, seul un extrait réduit est transmis à un modèle de langage
+    tiers (via le fournisseur OpenRouter), aux seules fins d'identifier les dates et de
+    formuler les événements. Cet extrait se limite aux phrases contenant une date, accompagnées
+    de l'objet et de l'expéditeur. Le corps complet d'un message n'est jamais transmis.
+  </p>
+
+  <h2>4. Conservation</h2>
+  <p>
+    L'application conserve localement les identifiants des messages déjà traités, afin de ne
+    pas créer deux fois le même événement. Ces identifiants ne permettent pas de reconstituer
+    le contenu des messages. Aucun message n'est archivé ni recopié ailleurs.
+  </p>
+
+  <h2>5. Partage et usage commercial</h2>
+  <ul>
+    <li>Aucune donnée n'est vendue, louée ou cédée à un tiers.</li>
+    <li>Aucune donnée n'est utilisée à des fins publicitaires, de profilage ou d'entraînement de modèle.</li>
+    <li>Aucun être humain autre que le propriétaire n'accède aux données.</li>
+  </ul>
+
+  <h2>6. Conformité à la politique Google</h2>
+  <p>
+    L'utilisation par cette application des informations reçues des API Google respecte la
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services
+    User Data Policy</a>, y compris les exigences d'usage limité (<em>Limited Use</em>).
+  </p>
+
+  <h2>7. Supprimer les données et révoquer l'accès</h2>
+  <ul>
+    <li>Supprimer le calendrier « Veille mail » efface tous les événements créés.</li>
+    <li>Révoquer l'accès de l'application :
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>Les identifiants de messages conservés localement sont supprimés avec le dossier de
+      l'application sur la machine du propriétaire.</li>
+  </ul>
+
+  <footer>
+    Contact : <a href="https://github.com/Moxdes/veille-mail/issues">ouvrir un ticket sur le dépôt</a>
+  </footer>
+
+</main>
+</body>
+</html>
